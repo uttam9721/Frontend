@@ -44,8 +44,8 @@ form button[type="submit"]{
     transition:background-color 0.2s ease-in-out;
 
 }
-form button[type="submit"]:hover{
-    background-color: red;
+form button[type="submit"]:hover,.recipe button:hover {
+    background-color: #ff5c5c;
 
 }
 /* main section  */
@@ -86,6 +86,16 @@ form button[type="submit"]:hover{
 }
 .recipe span{
     font-weight: 600px;
+}
+.recipe button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 18px auto;
+    background-color: #f44336;
+
 }
 /* Responsive Code */
 @media(max-width:600px){
