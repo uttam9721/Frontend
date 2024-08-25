@@ -97,6 +97,71 @@ form button[type="submit"]:hover,.recipe button:hover {
     background-color: #f44336;
 
 }
+
+/* Recipe details */
+.recipe-details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: #694c2f;
+    -webkit-transform: translate(-50%,-50%);
+    background-color: #694c2f;
+    border-radius: 12px;
+    height: 60%;
+    width: 40%;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+}
+.recipe-details-content {
+    padding:30px;
+
+}
+.ingredientList li{
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+.recipeInstructions p{
+    line-height: 30px;
+    white-space: pre-line;
+}
+.recipe-close-btn{
+    border: none;
+  font-size: 18px;
+  padding: 8px;
+  border-radius:4px ;
+  background-color: #f44336 ;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.recipeName{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+
+
+/* adding scrollbar */
+.recipe-details::-webkit-scrollbar {
+    width: 10px;
+
+}
+.recipe-details::-webkit-scrollbar-thumb{
+    background-color: #b5b5ba;
+    --webkit-border-radius:16px;
+}
 /* Responsive Code */
 @media(max-width:600px){
     header nav{
